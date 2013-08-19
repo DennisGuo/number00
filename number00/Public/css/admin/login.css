@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+.login-form-div{
+	text-align:left;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+}
+.login-form-div form{
+	border:5px solid #007DCC;
+	padding:5px;
+	line-height:30px;
+	
+}
+#msg{
+	text-align:center;
+	margin:10px;
+	color:#a00;
+}
