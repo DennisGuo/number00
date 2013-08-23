@@ -6,11 +6,85 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="{:C('WEBSITE_KEYWORDS')}">
 <meta name="description" content="{:C('WEBSITE_DESCRIPTION')}">
-<link rel="stylesheet" href="__PUBLIC__/lib/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet"
+	href="__PUBLIC__/lib/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" href="__PUBLIC__/css/public.css" />
 <link rel="stylesheet" href="__PUBLIC__/css/admin/index.css" />
 </head>
 <body>
-
+	<div class="navbar navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="brand" href="{:U('Index/Index/index')}">{:C('WEBSITE_NAME')}</a>
+				<div class="btn-group pull-right dropdown">
+					<button class="btn btn-info">{$user.username}</button>
+					<button class="btn dropdown-toggle" data-toggle="dropdown">
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="#" onclick="">修改资料</a></li>
+						<li class="divider"></li>
+						<li><a href="#" onclick="">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tabbable tabs-left">
+	  <ul class="nav nav-tabs">
+			<li class='active'>
+				<a href="#web-div" data-toggle="tab"><i class="icon-list-alt"></i>网站管理</a>
+			</li>
+			<li><a href="#pread-div" data-toggle="tab"><i class="icon-list-alt"></i>推广管理</a></li>
+	  </ul>
+	  <div class="tab-content">
+	    <div class="tab-pane active" id="web-div">
+	    	<form class="form-horizontal">
+				  <div class="control-group">
+				    <label class="control-label" for="inputEmail">网站名:</label>
+				    <div class="controls">
+				      <input type="text" id="wName" name="comName" value="{:C('WEBSITE_NAME')}" disabled/>
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label" for="wKey">关键字:</label>
+				    <div class="controls">
+				      <input type="text" id="wKey" name="wKey" value="{:C('WEBSITE_KEYWORDS')}" class="input-xlarge" disabled/>
+				    </div>
+				  </div>
+				  <div class="control-group">
+				    <label class="control-label" for="wDesc">网站描述:</label>
+				    <div class="controls">
+				     <textarea class="input-xxlarge" rows="4" disabled>{:C('WEBSITE_KEYWORDS')}</textarea>
+				    </div>
+				  </div>
+			</form>
+	    </div>
+	    <div class="tab-pane" id="pread-div">
+	    	<p>推广管理</p>
+	    </div>
+	  </div>
+	</div>
+	<!--  
+	<div class="container-fluid mycontainer">
+		<div class="row-fluid">
+			<div class="span2">
+				<ul class="nav nav-tabs nav-stacked pull-left">
+					<li>
+						<a href="#"><i class="icon-list-alt"></i> 网站管理</a>
+					</li>
+					<li><a href=""><i class="icon-list-alt"></i> 推广管理</a></li>
+				</ul>
+			</div>
+			<div class="span10">
+				
+			</div>
+		</div>
+	</div>
+	-->
 </body>
+<script src="__PUBLIC__/lib/jquery/jquery-1.8.2.min.js"></script>
+<script src="__PUBLIC__/lib/bootstrap/js/bootstrap-dropdown.js"></script>
+<script src="__PUBLIC__/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/admin/index.js"></script>
 </html>

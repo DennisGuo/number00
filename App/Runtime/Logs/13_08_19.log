@@ -1,0 +1,126 @@
+[ 2013-08-19T12:15:32+08:00 ] 127.0.0.1 /github/number00/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015530s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.009376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009536s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000660s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000595s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000389s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002822s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000735s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2013-08-19T12:15:44+08:00 ] 127.0.0.1 /github/number00/index.php/Admin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001146s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001325s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [8] Undefined index: uid D:\Documents\GitHub\number00\App\Lib\Action\Admin\IndexAction.class.php 第 4 行.
+
+[ 2013-08-19T12:15:44+08:00 ] 127.0.0.1 /github/number00/index.php/Admin/Login/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000789s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: msg D:\Documents\GitHub\number00\App\Runtime\Cache\Admin\a9abfa7512c3cfaa975ebc894e367fbb.php 第 40 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010333s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000564s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000560s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000387s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002456s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000709s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2013-08-19T12:15:45+08:00 ] 127.0.0.1 /github/number00/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001116s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001261s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+
+[ 2013-08-19T12:15:51+08:00 ] 127.0.0.1 /github/number00/index.php/Admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000804s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `n_user` [ RunTime:0.018124s ]
+ERR: 1146:Table 'number00db.n_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `n_user`
+SQL: SELECT * FROM `n_user` WHERE ( `username` = 'admin' ) AND ( `password` = 'guohengxi' ) LIMIT 1   [ RunTime:0.015647s ]
+ERR: 1146:Table 'number00db.n_user' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `n_user` WHERE ( `username` = 'admin' ) AND ( `password` = 'guohengxi' ) LIMIT 1  
+
+[ 2013-08-19T12:17:25+08:00 ] 127.0.0.1 /github/number00/index.php/Admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001826s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002039s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001620s ]
+SQL: SHOW COLUMNS FROM `n_users` [ RunTime:0.004080s ]
+SQL: SELECT * FROM `n_users` WHERE ( `username` = 'admin' ) AND ( `password` = 'guohengxi' ) LIMIT 1   [ RunTime:0.000760s ]
+
+[ 2013-08-19T12:17:49+08:00 ] 127.0.0.1 /github/number00/index.php/Admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001285s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `n_users` [ RunTime:0.003739s ]
+SQL: SELECT * FROM `n_users` WHERE ( `username` = 'admin' ) AND ( `password` = 'guohengxi' ) LIMIT 1   [ RunTime:0.000616s ]
+
+[ 2013-08-19T12:20:03+08:00 ] 127.0.0.1 /github/number00/index.php/Admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001164s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.010931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011087s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000788s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000740s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000605s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003350s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000989s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2013-08-19T12:20:03+08:00 ] 127.0.0.1 /github/number00/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002021s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002316s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001838s ]
+
+[ 2013-08-19T12:20:12+08:00 ] 127.0.0.1 /github/number00/index.php/Admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001676s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001938s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `n_users` [ RunTime:0.005855s ]
+
