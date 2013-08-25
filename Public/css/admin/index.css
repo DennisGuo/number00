@@ -1,2 +1,5 @@
 @CHARSET "UTF-8";
-.mycontainer{margin-top:20px;}
+#website p{
+    line-height: 40px;
+    border-top: 1px solid #ddd;
+}

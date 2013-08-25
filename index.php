@@ -5,6 +5,12 @@
 	define('APP_PATH', './App/');
 	//开启调试模式
 	define('APP_DEBUG', true);	
-	//加载框架入文件
+        
+        //加载框架入文件
 	require './ThinkPHP/ThinkPHP.php';
+        
+        //添加淘宝API
+        include("./taobaoSdk/TopSdk.php");
+        
+	
 ?>
